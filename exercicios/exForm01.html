@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="POST" action="/cgi-bin/post-query">
+        <label for="senha">Informe sua senha de acesso (8 caractéres):</label>
+        <input type="password" name="usu_senha" id="senha" value="opqwerty" size="8" maxsize="8">
+    </form>
+    <br>
+    <form action="POST" action="/cgi-bin/post-query">
+        <label for="nome_oculto">Você não pode visualizar nada aqui.</label>
+        <input type="hidden" name="nome_oculto" id="nome_oculto" value="opqwerty" size="8" maxsize="8">
+    </form>
+
+    <footer style="position: sticky; bottom: 10px; background-color: white;">
+        Micael Jeferson Junco
+    </footer>
+</body>
+</html>
