@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Tabela</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> Alinhamento de Tabelas e Celulas</h1>
+
+    <!-- Usanmos align dentro das células para alinha-las de várias formas -->
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>Primeira Celula</th>
+                <th>Segunda Celula</th>
+                <th>Terceira Celula</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">Centro</td>
+                <td align="right">Direita</td>
+                <td align="left">Esquerda</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Usamos cellspacing dentro das células para definir um espaçamento entre elas -->
+    <h1 style="text-align: center;"> Uso do Cellspacing</h1>
+    <table border="1" align="center" width="80%" cellspacing="24px">
+        <thead>
+            <tr>
+                <th  align="center" width="33%">Primeira Celula</th>
+                <th  align="center" width="33%">Segunda Celula</th>
+                <th  align="center" width="33%">Terceira Celula</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!-- Usamos cellpadding dentro das células para definir um acolchoamento dentro delas -->
+    <h1 style="text-align: center;"> Uso do Cellspadding</h1>
+    <table border="1" align="center" width="80%" cellpadding="24px">
+        <thead>
+            <tr>
+                <th  align="center" width="33%">Aluno</th>
+                <th  align="center" width="33%">Professor</th>
+                <th  align="center" width="33%">Técnico</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!-- Usamos rowspan dentro das células para definir se ela é um grupo de linhas, onde seu valor representa o número de linhas que ela agrupa -->
+    <h1 style="text-align: center;"> Uso do Rowspan</h1>
+    <table border="1" align="center" width="80%" cellpadding="12px">
+        <tbody>
+            <tr>
+                <td  align="center" width="16%" rowspan="3">3 Linhas</td>
+                <td  align="center" width="16%">L1 Col 2</td>
+                <td  align="center" width="16%">L1 Col 3</td>
+                <td  align="center" width="17%">L1 Col 4</td>
+                <td  align="center" width="17%">L1 Col 5</td>
+            </tr>
+            <tr>
+                <td  align="center" width="16%">L2 Col 2</td>
+                <td  align="center" width="16%">L2 Col 3</td>
+                <td  align="center" width="17%">L2 Col 4</td>
+                <td  align="center" width="17%">L2 Col 5</td>
+            </tr>
+            <tr>
+                <td  align="center" width="16%">L3 Col 2</td>
+                <td  align="center" width="16%">L3 Col 3</td>
+                <td  align="center" width="17%">L3 Col 4</td>
+                <td  align="center" width="17%">L3 Col 5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Usamos colspan dentro das células para definir se ela é um grupo de colunas, onde seu valor representa o número de colunas que ela agrupa -->
+    <h1 style="text-align: center;"> Uso do Colspan</h1>
+    <table border="1" align="center" width="80%" cellpadding="12px">
+        <tbody>
+            <tr>
+                <td  align="center" width="24%" colspan="3">3 Colunas</td>
+                <td  align="center" width="17%">L1 Col 4</td>
+            </tr>
+            <tr>
+                <td  align="center" width="16%">L2 Col 1</td>
+                <td  align="center" width="16%">L2 Col 2</td>
+                <td  align="center" width="17%">L2 Col 3</td>
+                <td  align="center" width="17%">L2 Col 4</td>
+            </tr>
+            <tr>
+                <td  align="center" width="16%">L3 Col 1</td>
+                <td  align="center" width="16%">L3 Col 2</td>
+                <td  align="center" width="17%">L3 Col 3</td>
+                <td  align="center" width="17%">L3 Col 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Usamos bgcolor dentro de uma célula para definir sua cor de fundo -->
+    <h1 style="text-align: center;"> Uso de Cores</h1>
+    <table border="1" align="center" width="80%" cellpadding="12px">
+        <tbody>
+            <tr>
+                <td  align="center" width="24%" colspan="4">3 Colunas</td>
+                <td  align="center" width="17%">L1 Col 5</td>
+                <td  align="center" width="17%">L1 Col 6</td>
+            </tr>
+            <tr>
+                <td  align="center" bgcolor="green" width="16%">L2 Col 2</td>
+                <td  align="center" bgcolor="blue" width="16%">L2 Col 3</td>
+                <td  align="center" bgcolor="yellow" width="17%">L2 Col 4</td>
+                <td  align="center" bgcolor="red" width="17%" colspan="3">L2 Col 5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer style="position: sticky; bottom: 10px; background-color: white;">
+        Micael Jeferson Junco
+    </footer>
+</body>
+</html>
