@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+</head>
+
+<body>
+    <center>
+        <h1>Cadastro de Clientes</h1>
+        <form action="#" method="post">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th rowspan="2" bgcolor="#f0f0f0">
+                            <img src="../img/iconMokele.png.png" alt="Mokele Mbembe icon" width="100px">
+                        </th>
+                        <th colspan="6" bgcolor="#f0f0f0">
+                            Campos de Cadastro
+                        </th>
+                    <tr>
+                        <th bgcolor="#f0f0f0">
+                            Nome Completo
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Rua
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Número
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Bairro
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Cidade
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="3" bgcolor="#f0f0f0">
+                            Preencha os dados do cliente
+                        </th>
+                        <td>
+                            <input type="text" name="nome" placeholder="Digite o nome completo" maxlength="100"
+                                size="30" minlength="5">
+                        </td>
+                        <td>
+                            <input type="text" name="rua" placeholder="Digite a rua" maxlength="100" size="30"
+                                minlength="3">
+                        </td>
+                        <td>
+                            <input type="text" name="numero" placeholder="Digite o número" maxlength="10" size="10"
+                                minlength="1">
+                        </td>
+                        <td>
+                            <input type="text" name="bairro" placeholder="Digite o bairro" maxlength="50" size="30"
+                                minlength="3">
+                        </td>
+                        <td>
+                            <input type="text" name="cidade" placeholder="Digite a cidade" maxlength="50" size="30"
+                                minlength="3">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th bgcolor="#f0f0f0">
+                            Estado
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Telefone
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Email
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            Data de Nascimento
+                        </th>
+                        <th bgcolor="#f0f0f0">
+                            CPF
+                            (números apenas)
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="estado">
+                                <option value="" disabled selected>Selecione o estado</option> <!-- Isso faz com que tenha uma opção padrão-->
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="telefone" placeholder="Digite o telefone" maxlength="15" size="15"
+                                minlength="10">
+                        </td>
+                        <td>
+                            <input type="email" name="email" placeholder="Digite o email" minlength="5">
+                        </td>
+                        <td>
+                            <input type="date" name="data_nascimento" max="2023-12-31" min="1900-01-01">
+                        </td>
+                        <td>
+                            <input type="number" name="cpf" placeholder="Digite o CPF" size="11" maxsize="11"
+                                min="10000000000">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Apagar</button>
+        </form>
+        <footer>
+            Micael Jeferson Junco
+        </footer>
+    </center>
+</body>
+
+</html>
